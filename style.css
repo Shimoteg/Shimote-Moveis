@@ -4,35 +4,106 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color: #E2DABC;
+    --background-color: #2E2D2D;
+}
+
 body {
-    background-image: linear-gradient(rgb(197, 12, 12) 20%, rgb(203, 140, 21));
+
+    background: ;
+    background-image: url(./assets/backgroundWood.jpg);
+
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
 }
 
 #container {
-
-    width: 360px;
-    height: 712px;
-    margin: 50px auto 0px;
-    padding: 0 24px;
-
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: auto;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
-
     align-items: center;
-    border: 1px solid black;
+    justify-content: center;
 
+    gap: 24px;
+
+    min-height: 100vh;
+
+    position: relative;
 
 }
 
-.banner {
-    width: 100%;
+.LogoBox {
+    text-align: center;
+    padding: 16px;
+}
 
-    display: block;
+#logo {
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 
+    display: block;
+    padding: 24px;
+}
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+ul li a {
+    background-color: var(--background-color);
+    text-decoration: none;
+
+    color: var(--color);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
     text-align: center;
-    border: 1px solid black;
+    font-size: 24px;
+
+    border-radius: 8px;
+    padding: 16px;
+
+    width: 100%;
+    max-width: 300px;
+
+    margin: auto;
+
+}
+
+ul li a:hover {
+    background: var(--background-color);
+    border: 1.5px solid var(--color);
+}
+
+.infos {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: auto;
+    background-color: var(--background-color);
+
+}
+
+.Endereco {
+    font-size: 16px;
+    color: var(--color);
+}
+
+.Telefone {
+    font-size: 16px;
+    color: var(--color);
 }
