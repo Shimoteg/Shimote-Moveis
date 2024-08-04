@@ -11,10 +11,8 @@
 
 body {
     background-image: url(./assets/backgroundWood.jpg);
-
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
-
 }
 
 .slogan {
@@ -26,7 +24,7 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    padding: auto;
+    padding: 0;
 
     display: flex;
     flex-direction: column;
@@ -38,16 +36,12 @@ body {
     min-height: 100vh;
 
     position: relative;
-
 }
 
 .LogoBox {
     text-align: center;
-
     background-color: var(--background-color);
-
     border-radius: 8px;
-
     border: 1.5px solid var(--color);
 }
 
@@ -55,9 +49,7 @@ body {
     width: 350px;
     height: 250px;
     object-fit: cover;
-
     display: block;
-
 }
 
 ul {
@@ -71,50 +63,40 @@ ul {
 ul li a {
     background-color: var(--background-color);
     text-decoration: none;
-
     color: var(--color);
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     gap: 16px;
     text-align: center;
     font-size: 24px;
-
     border-radius: 8px;
     padding: 16px;
-
     width: 100%;
     max-width: 300px;
-
     margin: auto;
-
 }
 
 ul li a:hover {
-    background: #e9b97c text-color: var(--background-color);
+    background-color: rgba(var(--background-color), alpha);
+    color: var(--background-color);
     border: 1.5px solid var(--color);
-
 }
 
 .infos {
     position: absolute;
     bottom: 0;
     text-align: center;
-    padding: auto;
+    width: 100%;
+    padding: 16px;
     background-color: var(--background-color);
-
 }
 
-.Endereco {
+.Endereco, .Telefone {
     font-size: 16px;
     color: var(--color);
 }
 
 .Telefone {
-    font-size: 16px;
-    color: var(--color);
     text-decoration: none;
-
 }
