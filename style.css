@@ -110,4 +110,6 @@ ul li a:hover {
 .Telefone {
     font-size: 16px;
     color: var(--color);
+    text-decoration: none;
+
 }
