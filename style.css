@@ -17,6 +17,11 @@ body {
 
 }
 
+.slogan {
+    font-size: 10px;
+    color: var(--color);
+}
+
 #container {
     width: 100%;
     max-width: 1000px;
